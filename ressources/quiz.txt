@@ -1,0 +1,5 @@
+A Pâques, que cherche-t-on dans les jardins?9 1/Des bonbons, 2/Des cadeaux, 3/Des chocolats, 4/Des jouets9 3/Des chocolats
+Quel animal est souvent associé à Pâques et est connu pour pondre des œufs en chocolat ?9 1/La poule, 2/Le lapin, 3/Les cloches, 4/La chèvre9 1/La poule
+Quel est le nom du lapin qui, selon la tradition, apporte des œufs de Pâques ?9 1/Bugs Bunny, 2/Le lapin blanc, 3/Pan Pan, 4/Le lapin de Pâques9 4/Le lapin de Pâques
+Quel objet est souvent associé à Pâques?9 1/La cuillère, 2/Les cloches, 3/Le panier, 4/Les chaussures9 2/Les cloches
+Quelle est la tradition populaire consistant à cacher des œufs colorés pour les enfants à trouver à Pâques ?9 1/La chasse aux œufs, 2/La course d'œufs, 3/La quête d'œufs, 4/La traque des œufs9 1/La chasse aux œufs

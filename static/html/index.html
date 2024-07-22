@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ</title>
+    <script src="./static/js/script.js"></script>
+    <link rel="stylesheet" href="./static/css/style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>QUIZ</h1>
+</header>
+
+
+<main class="center-content">
+
+    <!-- Menu du jeu -->
+    {{if eq .Page "Accueil"}}
+    <div>
+        <a href="/Menu">Commencer à jouer</a>
+    </div>
+
+    <!-- Choix des difficultes -->
+    {{else if eq .Page "Menu"}}
+    <div>
+        {{if ne .Phrase ""}}
+        <p>{{.Phrase}}</p>
+        <a href="/Accueil">Commencer à jouer</a>
+        {{else}}
+        <a href="/Easy">Easy</a>
+        <a href="/Medium">Medium</a>
+        <a href="/Hard">Hard</a>
+        {{end}}
+    </div>
+
+    <!-- Page du jeu -->
+    {{else if eq .Page "Quiz"}}
+    <div id="question">
+        <div class="question-box"> 
+            <p>{{.Question.Text}}</p>
+
+            <!-- formulaire avec récupération des réponses dans le back (le golang) -->
+            <form action="/HandlerVerif" method="POST" onsubmit="return validateForm()">
+                {{range $index, $option := .Question.Options}}
+                    <input type="radio" id="option{{$index}}" name="answer" value="{{$option}}">
+                    <label for="option{{$index}}">{{$option}}</label><br>
+                {{end}}
+                <div class="button-container">
+                    <button type="submit">Envoyer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- Page de verif (permets d'afficher si on a bon ou pas) -->
+    {{else if eq .Page "HandlerVerif"}}
+    <div class="result-box">
+        <p>{{.Result}}</p>
+        <a href="/NextPage">Continuer</a>
+    </div>
+
+    <!-- Page de fin du jeu -->
+    {{else if eq .Page "endQuiz"}}
+    <div class="endGame">
+        <p>Score final : {{.Score}}/5</p>
+        <a href="/Menu">Rejouer</a>
+        <a href="/accueilSite">Menu</a>
+    </div>
+    {{end}}
+</main>
+
+<footer>
+    <p>QUIZ créé par Elouan CHEDALLEUX</p>
+</footer>
+
+</body>
+</html>

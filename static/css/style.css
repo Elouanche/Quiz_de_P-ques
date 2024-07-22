@@ -1,0 +1,208 @@
+/* Style du header (dégradé et couleur texte) */
+header {
+    background: linear-gradient(to right, #6dd5ed, #2193b0, #bcb0c6, #bcb0c6, #6dd5ed); 
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Permet de faire la mise en page du corps de la page avec la photo du lapin*/
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("./img/lapin.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+    background-attachment: fixed; 
+}
+
+/* Mise en forme du formulaire */
+form {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+/* Style du bouton Envoyer */
+button[type="submit"] {
+    font-size: 1.2em;
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Style des liens */
+a {
+    font-size: 1.5em; 
+    color: #333;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #6dd5ed;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: rgb(0, 213, 255);
+    color: white;
+}
+
+/* Apparence du footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to right, #6dd5ed, #2193b0, #bcb0c6, #bcb0c6, #6dd5ed); /* Dégradé de couleur */
+    color: white;
+    position: fixed;
+    bottom: 0; 
+    width: 100%; 
+}
+
+/* Style pour centrer le contenu horizontalement et verticalement */
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; 
+}
+
+/* Style pour centrer le bouton d'envoie */
+.button-container {
+    text-align: center;
+}
+
+/* Mise en forme des paragraphes */
+.ask p {
+    font-size: 1.3em; 
+    margin-bottom: 20px; 
+}
+
+/* Style des boîtes autour des questions */
+.ask {
+    background-color: #ffffff; 
+    padding: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0px 10px 20px rgba(0, 0.3, 0.4, 0.5); 
+    width: 100%; 
+    max-width: 600px; 
+    margin-top: 20px;
+}
+
+/* Style des options */
+.ask label {
+    font-size: 1.2em; 
+}
+
+/* Style des boîtes autour des questions  */
+.question-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0.3, 0.4, 0.5);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style des paragraphes pour les questions */
+.question-box p{
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+/* Style des boîtes autour des résultats  */
+.result-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0.3, 0.4, 0.5);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Style des paragraphes à l'intérieur de la boîte de résultat */
+.result-box p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+}
+
+/* Style pour la page de fin de jeu */
+.endGame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0.3, 0.4, 0.5);
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto; 
+    background-image: url("./img/imageOeufs.png"); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+/* Style du paragraphe pour le score final */
+.endGame p {
+    font-size: 2em;
+    color: white;
+}
+
+/* Style des liens de navigation */
+.endGame a {
+    font-size: 1.5em; 
+    color: #333;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #6dd5ed;
+    border-radius: 5px;
+    text-align: center;
+    width: 150px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*style quand on passe la souri sur le bouton */
+.endGame a:hover {
+    background-color: rgb(0, 213, 255);
+    color: white;
+}
