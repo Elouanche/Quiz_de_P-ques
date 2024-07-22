@@ -1,4 +1,4 @@
-# Groupie-Tracker - Documentation
+# Quiz de Pâques - Documentation
 
 Projet réalisé seul.
 
